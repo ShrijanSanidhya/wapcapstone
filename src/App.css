@@ -1,0 +1,157 @@
+/* Main App Styles */
+.container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* Helper Classes */
+.text-center {
+  text-align: center;
+}
+
+.loading-message {
+  text-align: center;
+  padding: 3rem 0;
+  color: #666666;
+  font-size: 1.1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  background: #fff;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.04);
+  padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2.2rem;
+  padding: 0.7rem 2.5rem 0.7rem 2.5rem;
+  font-size: 1.08rem;
+}
+
+.nav-logo {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #48bb78;
+  margin-right: 2.5rem;
+  letter-spacing: -1px;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-link {
+  background: none;
+  border: none;
+  color: #222;
+  font-size: 1.08rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.3rem 0.7rem;
+  border-radius: 5px;
+  transition: color 0.2s, background 0.2s;
+}
+
+.nav-link.active, .nav-link:focus {
+  color: #48bb78;
+  background: #e6f9ef;
+}
+
+.nav-link:hover {
+  color: #38a169;
+  background: #e6f9ef;
+}
+
+.nav-login {
+  margin-left: auto;
+  margin-right: 0.7rem;
+  color: #222;
+  background: none;
+  border: none;
+  font-size: 1.08rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.3rem 0.7rem;
+  border-radius: 5px;
+  transition: color 0.2s, background 0.2s;
+}
+
+.nav-login:hover {
+  color: #38a169;
+  background: #e6f9ef;
+}
+
+.nav-signup {
+  background: #48bb78;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 7px;
+  padding: 0.45rem 1.3rem;
+  font-size: 1.08rem;
+  margin-left: 0.2rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.nav-signup:hover {
+  background: #38a169;
+}
+
+@media (max-width: 700px) {
+  .nav-menu {
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0.7rem 1rem;
+  }
+  .nav-logo {
+    margin-right: 1rem;
+    font-size: 1.2rem;
+  }
+}
+
+.app-main {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.app-footer {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  text-align: center;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .app-main {
+    padding: 1rem;
+  }
+}

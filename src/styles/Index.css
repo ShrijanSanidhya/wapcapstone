@@ -1,0 +1,249 @@
+.index-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.hero-section {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  color: #2d3748;
+  margin-bottom: 1rem;
+}
+
+.hero-section p {
+  font-size: 1.25rem;
+  color: #4a5568;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  background-color: #4299e1;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #3182ce;
+}
+
+.features-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.feature-card {
+  padding: 2rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card h3 {
+  color: #2d3748;
+  margin-bottom: 1rem;
+}
+
+.feature-card p {
+  color: #4a5568;
+  line-height: 1.5;
+}
+
+.cta-section {
+  text-align: center;
+  padding: 3rem 2rem;
+  background-color: #f7fafc;
+  border-radius: 1rem;
+}
+
+.cta-section h2 {
+  color: #2d3748;
+  margin-bottom: 2rem;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.primary-button,
+.secondary-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.125rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.primary-button {
+  background-color: #4299e1;
+  color: white;
+  border: none;
+}
+
+.primary-button:hover {
+  background-color: #3182ce;
+}
+
+.secondary-button {
+  background-color: white;
+  color: #4299e1;
+  border: 2px solid #4299e1;
+}
+
+.secondary-button:hover {
+  background-color: #ebf8ff;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 2rem 1rem;
+  }
+
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .features-section {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+}
+
+.index-hero-bg {
+  background: #f7f7f7;
+  padding: 0 0 3rem 0;
+}
+
+.index-hero {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 3rem 1rem 2.5rem 1rem;
+}
+
+.index-title {
+  font-size: 2.7rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 1.2rem;
+}
+
+.index-subtitle {
+  font-size: 1.25rem;
+  color: #555;
+  margin-bottom: 2.2rem;
+}
+
+.index-hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.index-btn-green {
+  background: #48bb78;
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 0.85rem 2.2rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.index-btn-green:hover {
+  background: #38a169;
+}
+
+.index-btn-orange {
+  background: #ed8936;
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 0.85rem 2.2rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.index-btn-orange:hover {
+  background: #dd6b20;
+}
+
+.index-features {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 2.5rem 1rem 0 1rem;
+}
+
+.index-feature-card {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.07);
+  padding: 2.2rem 1.5rem 1.7rem 1.5rem;
+  flex: 1 1 0;
+  min-width: 220px;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s;
+}
+.index-feature-card:hover {
+  box-shadow: 0 4px 24px 0 rgba(72,187,120,0.13);
+}
+.index-feature-emoji {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+.index-feature-title {
+  font-size: 1.18rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 0.7rem;
+  text-align: center;
+}
+.index-feature-desc {
+  color: #555;
+  font-size: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .index-features {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  .index-feature-card {
+    max-width: 95vw;
+  }
+} 

@@ -1,0 +1,26 @@
+.not-found-page {
+    text-align: center;
+    padding: 4rem 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .error-code {
+    font-size: 6rem;
+    font-weight: 700;
+    color: #4CAF50;
+    margin-bottom: 1rem;
+  }
+  
+  .error-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .error-message {
+    color: #666666;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+  }
+   

@@ -1,0 +1,122 @@
+/* Base Styles */
+:root {
+  --primary: #4CAF50;
+  --primary-light: #81C784;
+  --secondary: #FF9800;
+  --accent: #F44336;
+  --background: #FFFFFF;
+  --text: #333333;
+  --gray-light: #F5F5F5;
+  --gray: #E0E0E0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--text);
+  background-color: #f7f7f7;
+  line-height: 1.6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-light);
+}
+
+.btn-secondary {
+  background-color: var(--secondary);
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #FFB74D;
+}
+
+/* Forms */
+.form-control {
+  margin-bottom: 1rem;
+}
+
+.form-control label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.form-control input,
+.form-control select,
+.form-control textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--gray);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Page Layout */
+.page-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+}
+
+.page-subtitle {
+  color: #666666;
+  margin-bottom: 2rem;
+}
+
+/* Recipe Grid */
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 1.75rem;
+  }
+  
+  .btn {
+    padding: 0.6rem 1.2rem;
+  }
+}
