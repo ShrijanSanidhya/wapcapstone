@@ -7,7 +7,7 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Profile from './pages/Profile';
-import Recipes from './pages/Recipes';
+// import Recipes from './pages/Recipes';
 import MealPlanner from './pages/MealPlanner';
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
@@ -139,7 +139,7 @@ function App() {
       </main>
 
       <footer className="app-footer">
-        <p>&copy; 2024 Calorie Tracker. All rights reserved.</p>
+        <p>&copy; 2025 Calorie Tracker. All rights reserved.</p>
       </footer>
     </div>
   );
