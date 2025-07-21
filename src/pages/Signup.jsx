@@ -21,7 +21,7 @@ const Signup = ({ handleLogin }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    // Basic validation
+    
     if (!formData.name || !formData.email || !formData.password) {
       setError('Please fill in all fields');
       return;
@@ -37,8 +37,7 @@ const Signup = ({ handleLogin }) => {
       return;
     }
     
-    // In a real app, this would call an API to create a new user
-    // For this demo, we'll simulate a successful registration
+    
     const userData = {
       id: Math.floor(Math.random() * 1000),
       name: formData.name,

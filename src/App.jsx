@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 
-// Import all page components
+
 import Index from './pages/Index';
 import Home from './pages/Home';
 import Login from './pages/Login';
@@ -17,7 +17,7 @@ function App() {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
-    // Check for saved user data in localStorage
+    
     const savedUser = localStorage.getItem('user');
     if (savedUser) {
       setUser(JSON.parse(savedUser));
@@ -63,7 +63,7 @@ function App() {
     }
   };
 
-  // Helper to determine active nav link
+  
   const isActive = (page) => {
     if (page === 'home' && (currentPage === 'home' || currentPage === 'index')) return true;
     return currentPage === page;

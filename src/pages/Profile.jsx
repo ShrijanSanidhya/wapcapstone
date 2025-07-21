@@ -30,7 +30,7 @@ const Profile = ({ user, setUser }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    // Update user data (in a real app, this would call an API)
+   
     const updatedUser = {
       ...user,
       name: formData.name,
@@ -50,7 +50,7 @@ const Profile = ({ user, setUser }) => {
     }, 3000);
   };
   
-  // Dummy data for profile stats
+ 
   const stats = [
     { label: 'Calories Tracked', value: '12,450' },
     { label: 'Meals Logged', value: '32' },

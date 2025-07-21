@@ -9,14 +9,13 @@ const Login = ({ handleLogin }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    // Basic validation
+    
     if (!email || !password) {
       setError('Please enter both email and password');
       return;
     }
     
-    // In a real app, this would call an API to authenticate the user
-    // For this demo, we'll simulate a successful login
+    
     const userData = {
       id: 1,
       name: email.split('@')[0],
