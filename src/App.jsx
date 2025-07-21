@@ -60,6 +60,7 @@ function App() {
         return <Contact onNavigate={handleNavigate} />;
       default:
         return <NotFound onNavigate={handleNavigate} />;
+        
     }
   };
 
